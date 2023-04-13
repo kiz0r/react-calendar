@@ -1,0 +1,61 @@
+@import './../../common/style/mixins'
+
+.calendarContainer 
+  @include universal-flex-container(column, center, center)
+  gap: 25px
+
+.calendarWrapper 
+  display: flex
+  border: 10px solid #00938b
+  width: 100%
+  max-width: 800px
+  min-width: 600px
+  height: 100%
+  min-height:400px
+  max-height: 600px
+
+.dateInput 
+  color: #000
+  padding: 5px
+  text-align: center
+  outline: none
+  font-weight: 500
+  font-family: inherit
+  font-size: 14px
+  border: 2px solid #000
+  border-radius: 25px
+
+.sideWrapper
+  min-height: 400px
+  min-width: 300px
+  @include universal-flex-container(column, center, center)
+  padding: 0 12px 
+
+.leftSide
+  background-color: #38CEC4
+  color: #ffffff
+
+.showedDate
+  font-weight: 500
+  font-size: 128px
+  line-height: 156px
+
+.showedWeekDay
+  font-size: 28px
+  font-weight: 300
+  margin-bottom: 12px
+
+.weekDay
+  width: 100%
+  gap: 20px
+  font-size: 18px
+  font-weight: 700
+  color:#eb1d5e
+  &>th 
+    padding: 8px 12px
+
+.monthField 
+  color: #009991
+  font-size: 24px
+  font-weight: 700
+  margin: 10px 0
